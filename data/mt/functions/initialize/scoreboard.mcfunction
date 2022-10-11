@@ -8,8 +8,6 @@ scoreboard objectives add MT-Output dummy
 scoreboard objectives add MT-Index dummy
 
 
-
-
 ## 定数
 scoreboard players set $MT_-2^31 MT-Const -2147483648
 scoreboard players set $MT_-1 MT-Const -1
