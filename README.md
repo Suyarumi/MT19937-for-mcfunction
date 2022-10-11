@@ -9,13 +9,13 @@ Minecraft Random Number Generator Datapack
 
 ```
 このコマンドを実行するだけ！
-function mt:initialize/
+function mt:generate/
 
 実行結果は$MT-RANDのMT-Outputに出力されます
 scoreboard players get $MT-RAND MT-Output
 
 あるいはこのコマンドで実行結果を直接別の場所に代入できます
-execute store result score _ _ run function mt:initialize/
+execute store result score _ _ run function mt:generate/
 ```
 
 # ライセンス
