@@ -8,40 +8,6 @@ scoreboard objectives add MT-Output dummy
 scoreboard objectives add MT-Index dummy
 
 
-scoreboard objectives add MT-1st-bit dummy
-scoreboard objectives add MT-2nd-bit dummy
-scoreboard objectives add MT-3rd-bit dummy
-scoreboard objectives add MT-4th-bit dummy
-scoreboard objectives add MT-5th-bit dummy
-scoreboard objectives add MT-6th-bit dummy
-scoreboard objectives add MT-7th-bit dummy
-scoreboard objectives add MT-8th-bit dummy
-scoreboard objectives add MT-9th-bit dummy
-scoreboard objectives add MT-10th-bit dummy
-scoreboard objectives add MT-11th-bit dummy
-scoreboard objectives add MT-12th-bit dummy
-scoreboard objectives add MT-13th-bit dummy
-scoreboard objectives add MT-14th-bit dummy
-scoreboard objectives add MT-15th-bit dummy
-scoreboard objectives add MT-16th-bit dummy
-scoreboard objectives add MT-17th-bit dummy
-scoreboard objectives add MT-18th-bit dummy
-scoreboard objectives add MT-19th-bit dummy
-scoreboard objectives add MT-20th-bit dummy
-scoreboard objectives add MT-21th-bit dummy
-scoreboard objectives add MT-22th-bit dummy
-scoreboard objectives add MT-23th-bit dummy
-scoreboard objectives add MT-24th-bit dummy
-scoreboard objectives add MT-25th-bit dummy
-scoreboard objectives add MT-26th-bit dummy
-scoreboard objectives add MT-27th-bit dummy
-scoreboard objectives add MT-28th-bit dummy
-scoreboard objectives add MT-29th-bit dummy
-scoreboard objectives add MT-30th-bit dummy
-scoreboard objectives add MT-31th-bit dummy
-scoreboard objectives add MT-32th-bit dummy
-
-
 
 
 ## 定数

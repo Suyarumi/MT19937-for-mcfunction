@@ -4,166 +4,163 @@
 ### $MT-XOR MT-Output : 出力
 #######################
 
+scoreboard players set $MT-XOR MT-Output 0
 
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-32th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-32th-bit 1
-
-scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
-scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-31th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-31th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-XOR MT-Output -2147483648
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-XOR MT-Output -2147483648
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-30th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-30th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^30 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^30 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-29th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-29th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^29 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^29 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-28th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-28th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^28 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^28 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-27th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-27th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^27 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^27 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-26th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-26th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^26 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^26 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-25th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-25th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^25 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^25 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-24th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-24th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^24 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^24 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-23th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-23th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^23 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^23 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-22th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-22th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^22 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^22 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-21th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-21th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^21 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^21 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-20th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-20th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^20 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^20 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-19th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-19th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^19 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^19 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-18th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-18th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^18 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^18 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-17th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-17th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^17 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^17 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-16th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-16th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^16 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^16 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-15th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-15th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^15 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^15 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-14th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-14th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^14 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^14 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-13th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-13th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^13 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^13 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-12th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-12th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^12 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^12 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-11th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-11th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^11 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^11 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-10th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-10th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^10 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^10 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-9th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-9th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^9 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^9 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-8th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-8th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^8 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^8 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-7th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-7th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^7 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^7 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-6th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-6th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^6 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^6 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-5th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-5th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^5 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^5 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-4th-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-4th-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^4 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^4 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-3rd-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-3rd-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^3 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^3 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-2nd-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-2nd-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2^2 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2^2 MT-Const
 
 scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
 scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
-execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players set $MT-CONVERT MT-1st-bit 1
-execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players set $MT-CONVERT MT-1st-bit 1
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players operation $MT-XOR MT-Output += $MT_2 MT-Const
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players operation $MT-XOR MT-Output += $MT_2 MT-Const
 
-function binary:convert_to_int
-
-scoreboard players operation $MT-XOR MT-Output = $MT-CONVERT MT-Output
+scoreboard players operation $MT-XOR MT-Input1 *= $MT_2 MT-Const
+scoreboard players operation $MT-XOR MT-Input2 *= $MT_2 MT-Const
+execute if score $MT-XOR MT-Input1 matches ..-1 if score $MT-XOR MT-Input2 matches 0.. run scoreboard players add $MT-XOR MT-Output 1
+execute if score $MT-XOR MT-Input1 matches 0.. if score $MT-XOR MT-Input2 matches ..-1 run scoreboard players add $MT-XOR MT-Output 1
 
